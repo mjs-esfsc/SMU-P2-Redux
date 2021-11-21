@@ -1,0 +1,5 @@
+node_modules
+externals
+DB
+.env
+.DS_Store

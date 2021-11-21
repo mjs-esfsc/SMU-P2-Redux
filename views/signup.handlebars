@@ -1,0 +1,53 @@
+<!-- Signup Form for user -->
+      <div class="row">
+
+        <div class="col-md-6">
+          <form class="form signup-form">
+            <h2>Signup Form</h2>
+
+            <div class="form-group">
+              <label for="name-signup">Name</label>
+              <input
+                type="text"
+                class="form-input"
+                id="name-signup"
+                placeholder="Name"
+              />
+            <div class="form-group">
+              <label for="email-signup">Email address</label>
+              <input
+                type="text"
+                class="form-input"
+                id="email-signup"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password-signup">Password</label>
+              <input
+                type="password"
+                class="form-input"
+                id="password-signup"
+                placeholder="Password"
+              />
+            </div>
+            <div
+              style="display: none;"
+              id="alert"
+              class="alert alert-danger"
+              role="alert"
+            >
+              <span
+                class="glyphicon glyphicon-exclamation-sign"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Error:</span> <span class="msg"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <p>Or log in <a href="/login">here</a></p>
+          </form>
+          <br />
+        </div>
+      </div>
+      <script src="./css/js/login.js"></script>
+      <!-- /Signup -->

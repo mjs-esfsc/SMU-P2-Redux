@@ -1,0 +1,104 @@
+<h1>Shopping Cart!</h1>
+  
+      <!-- Cart table -->
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">ShoppingcartId</th>
+            <th scope="col">UserId</th>
+            <th scope="col">BookId</th>
+            <th scope="col">Title</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody id="cartTableBody">
+        </tbody>
+      </table>
+      <!-- /Cart table -->
+
+      <button type="button" class="btn btn-secondary" id="continueBrowsing">
+        Continue browsing
+      </button>
+      <button type="button" class="btn btn-secondary" id="purchasesHistory">
+        Book History
+      </button>
+      <button type="button" class="btn btn-primary" id="confirmPurchase">
+        Confirm purchase!
+      </button>
+
+      <div id="purchasesDiv">
+        <h1 class="mt-5">Purchases history</h1>
+
+        <!-- Purchases table -->
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">PurchaseId</th>
+              <th scope="col">UserId</th>
+              <th scope="col">BookId</th>
+              <th scope="col">Title</th>
+              <th scope="col">Price</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody id="purchasesTableBody">
+          </tbody>
+        </table>
+      </div>
+      <!-- /Purchases table -->
+
+      <!-- Purchase confirmation modal -->
+      <div
+        class="modal fade"
+        id="purchaeConfirmationModal"
+        data-backdrop="static"
+        data-keyboard="false"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="purchaeConfirmationModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="purchaeConfirmationModal">
+                Purchase confirmation
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Payment received.</p>
+              <p>Enjoy your reading!!</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Purchase confirmation modal -->
+ 
+ <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cliply.co/wp-content/uploads/2021/08/472108170_THANK_YOU_STICKER_400px.gif" class="d-block w-40" alt="...">
+    </div>
+
